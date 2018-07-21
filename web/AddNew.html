@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add New</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body style="background-image: url(news.jpg);">
+        
+         
+            <h1 style="background-color: #000; font-weight: bold;color: #fff; margin-left: auto; margin-right: auto; width: 450px; font-size: 38px; text-align: center; margin-top: 10px;">Add New News Item Below...</h1>
+            <div style="width:500px; margin-right: auto; margin-left: auto; background-color:#fff; opacity:0.85; padding-left: 50px; padding-top: 20px; padding-bottom: 20px; color: #000;">
+<!--                
+                Form directs its input data to Manager Add New-->
+                <form action="JSP/ManagerAddNew.jsp" method="POST" style="">
+                    Title :<br>
+                    <input type="text" name="tilte" style="width:400px; margin-bottom: 7px; margin-top: 4px;"><br>
+                    Description :<br>
+                    <input type="text" name="description" style="width:400px; margin-bottom: 7px;margin-top: 4px;"><br>
+                    Detail :<br>
+                    <textarea name="detail" style="width:400px; height:200px; margin-bottom: 12px;margin-top: 4px;"></textarea><br>
+                    Category :
+                    <select name="category" style="width: 120px; margin-bottom: 12px;">
+                        <option value="World">World</option>
+                        <option value="Tech">Tech</option>
+                        <option value="Sport">Sport</option>
+                    </select> <br>
+                    Image :<br>
+                    <input type="text" name="image" style="width:400px; margin-bottom: 7px;margin-top: 4px;"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+       
+        
+        
+        
+    </body>
+</html>
